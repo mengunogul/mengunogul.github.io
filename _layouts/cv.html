@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- _layouts/cv.html -->
-<style>
+<!-- <style>
   #myiframe {
     /* position: relative;
     top: -30px;
@@ -14,15 +14,14 @@ layout: default
     padding: 0; */
     /* overflow: hidden;
     z-index: 999999; */
-  }
+  } -->
 </style>
         <div class="post">
           <header class="post-header">
             <h1 class="post-title">{{ page.title }} {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>{% endif %}</h1>
             <p class="post-description">{{ page.description }}</p>
           </header>
-          {{ site.url }}{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}
-          <iframe src="http://docs.google.com/gview?url={{ site.url }}{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}&embedded=true" frameborder="0" id="myiframe"></iframe>
+          <!-- <iframe src="http://docs.google.com/gview?url={{ site.url }}{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}&embedded=true" frameborder="0" id="myiframe"></iframe> -->
           <!-- <article>
             <div class="cv">
               {% for entry in site.data.cv %}
